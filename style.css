@@ -51,6 +51,7 @@ ol {
 body {
   font-family: var(--font-family-base);
   font-weight: 400;
+  background-color: var(--stone-100);
   color: var(--stone-600);
   line-height: 1.5;
 }
@@ -95,12 +96,17 @@ body {
 }
 
 /* Components */
-.container {
-  width: 100%;
-}
 .recipe {
+  background-color: var(--white);
+}
+
+.wrapper {
   padding-inline: clamp(2rem, 1.5229rem + 2.0356vw, 2.5rem);
   padding-block: 2.5rem;
+}
+
+.picture {
+  width: 100%;
 }
 
 .recipe__heading {
@@ -133,12 +139,12 @@ body {
   gap: 1.5rem;
 }
 
-.recipe > section:nth-of-type(2) {
+.recipe section:nth-of-type(2) {
   border-block-start: none;
   padding-block-start: 0;
 }
 
-.recipe > section:last-of-type {
+.recipe section:last-of-type {
   border-block-end: none;
   padding-block-end: 0;
 }
@@ -194,11 +200,7 @@ body {
 }
 
 @media screen and (min-width: 48em) {
-  body {
-    background-color: var(--stone-100);
-  }
-
-  .container {
+  .recipe {
     background-color: var(--white);
     width: var(--fluid-616-736);
     margin: 8rem auto;

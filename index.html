@@ -13,7 +13,7 @@
     <title>Recipe page | Frontend Mentor</title>
   </head>
   <body>
-    <div class="container">
+    <main class="recipe">
       <figure class="picture-box">
         <img
           class="picture"
@@ -21,7 +21,7 @@
           alt="Savory folded omelette and dip"
         />
       </figure>
-      <main class="recipe">
+      <div class="wrapper">
         <header>
           <h1 class="heading normal-weight recipe__heading">
             Simple Omelette Recipe
@@ -32,10 +32,10 @@
             your choice of cheese, vegetables, or meats.
           </p>
         </header>
-        <section class="preparation">
-          <h3 class="semi-bold-weight preparation__heading">
+        <section id="preparation" class="preparation">
+          <h2 class="semi-bold-weight preparation__heading">
             Preparation time
-          </h3>
+          </h2>
           <ul class="list">
             <li class="circle-item preparation__item">
               <p>
@@ -50,7 +50,7 @@
             </li>
           </ul>
         </section>
-        <section class="cooking-info">
+        <section id="ingredients" class="cooking-info">
           <h2 class="heading normal-weight cooking-info__heading">
             Ingredients
           </h2>
@@ -66,7 +66,7 @@
             </li>
           </ul>
         </section>
-        <section class="cooking-info">
+        <section id="instructions" class="cooking-info">
           <h2 class="heading normal-weight cooking-info__heading">
             Instructions
           </h2>
@@ -116,7 +116,7 @@
             </li>
           </ol>
         </section>
-        <section class="cooking-info">
+        <section id="nutrition" class="cooking-info">
           <h2 class="heading normal-weight cooking-info__heading">Nutrition</h2>
           <p>
             The table below shows nutritional values per serving without the
@@ -139,7 +139,7 @@
             </li>
           </ul>
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
   </body>
 </html>
